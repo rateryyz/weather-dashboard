@@ -1,5 +1,5 @@
 async function fetchWeather(city) {
-  const apiKey = "yourkey";
+  const apiKey = "9375c23dce324a9e99b125308241211";
   const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7&lang=en`;
 
   try {
