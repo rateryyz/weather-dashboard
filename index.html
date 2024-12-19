@@ -1,92 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="src/styles/reset.css" />
-    <link rel="stylesheet" href="src/styles/main.css" />
   </head>
   <body>
-    <div class="weather-dashboard">
-      <div class="weather-info">
-        <div class="city-header">
-          <img
-            src="./src/images/black-placeholder-variant.png"
-            alt="Weather Icon"
-            class="weather-icon"
-          />
-          <h2 id="city-name">Oklahoma, USA</h2>
-        </div>
-        <div class="temperature">
-          <span id="temperature" class="temp-main">20°</span>
-          <span id="condition" class="condition">Sunny</span>
-        </div>
-        <div class="details">
-          <div id="humidity" class="detail-item">Humidity: 60%</div>
-          <div id="wind-speed" class="detail-item">Wind: 15 km/h</div>
-          <div id="feels-like" class="detail-item">Feels Like: 18°C</div>
-        </div>
-      </div>
-      <div class="famous-cities">
-        <div class="famous-city" id="city-1">
-          <h4 id="city-1-name">Paris</h4>
-          <p id="city-1-temp">--°C</p>
-          <p id="city-1-condition">--</p>
-        </div>
-        <div class="famous-city" id="city-2">
-          <h4 id="city-2-name">Tokyo</h4>
-          <p id="city-2-temp">--°C</p>
-          <p id="city-2-condition">--</p>
-        </div>
-      </div>
-
-      <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Enter city..." />
-        <img
-          src="./src/images/search-interface-symbol.png"
-          alt="search-icon"
-          class="search-icon right"
-          id="search-button"
-        />
-      </div>
-
-      <div class="forecast-bottom">
-        <h3>Forecast</h3>
-        <div class="temperature-forecast">
-          <div class="forecast-item" id="forecast-sun">
-            <span id="forecast-sun-temp" class="forecast-temp">20°</span>
-            <span id="forecast-sun-date" class="forecast-date">Sun</span>
-          </div>
-          <div class="forecast-item" id="forecast-mon">
-            <span id="forecast-mon-temp" class="forecast-temp">18°</span>
-            <span id="forecast-mon-date" class="forecast-date">Mon</span>
-          </div>
-          <div class="forecast-item" id="forecast-tue">
-            <span id="forecast-tue-temp" class="forecast-temp">15°</span>
-            <span id="forecast-tue-date" class="forecast-date">Tue</span>
-          </div>
-          <div class="forecast-item" id="forecast-wed">
-            <span id="forecast-wed-temp" class="forecast-temp">12°</span>
-            <span id="forecast-wed-date" class="forecast-date">Wed</span>
-          </div>
-          <div class="forecast-item" id="forecast-thu">
-            <span id="forecast-thu-temp" class="forecast-temp">10°</span>
-            <span id="forecast-thu-date" class="forecast-date">Thu</span>
-          </div>
-          <div class="forecast-item" id="forecast-fri">
-            <span id="forecast-fri-temp" class="forecast-temp">10°</span>
-            <span id="forecast-fri-date" class="forecast-date">Fri</span>
-          </div>
-          <div class="forecast-item" id="forecast-sat">
-            <span id="forecast-sat-temp" class="forecast-temp">10°</span>
-            <span id="forecast-sat-date" class="forecast-date">Sat</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="src/scripts/fetchWeather.js"></script>
-    <script src="src/scripts/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
